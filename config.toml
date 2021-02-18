@@ -1,0 +1,193 @@
+# Page settings
+
+baseURL = "/"
+languageCode = "en"
+title = "vincixu"
+theme = "devresume"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[params]
+    author = "徐鑫"
+    description = "DevResume"
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "徐鑫"
+        tagline = "Senior Software Engineer"
+        avatar = "/photo.jpeg"
+
+    [params.contact]
+        enable = true
+        location = "深圳"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:+8613603043209"
+        text = "+8613603043209"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:277040271@qq.com"
+        text = "277040271@qq.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "http://www.dreamrounder.com"
+        text = "www.dreamrounder.com"
+
+    [params.summary]
+        enable = true
+        text = "我工作于腾讯IEG，和小组的其他同事负责一个面向公司内部的云平台。我的主要工作是主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询，帮助公司的产品从传统架构转型到云原生。工作之余我也热爱开源贡献，为众多开源项目都曾贡献过自己的代码。"
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = "2019 - Present"
+        company = "Tencent"
+        details = "负责内部云平台的微服务设计和开发，平台使用k8s提供调度能力，GO编写管控服务，截止2020年底，平台服务于公司数十种产品，部署POD数十万。"
+        [[params.experience.list.items]]
+        details = "为平台搭建一套完整的分布式指标采集组件，负责采集整个平台百万级别 POD 的性能指标与业务指标，截止 2020 年底，每秒写入指标超过千万级别。"
+        [[params.experience.list.items]]
+        details = "技术支持 10+ 项目从传统架构转型到云原生，其中包含日访问量亿级的项目"
+        [[params.experience.list.items]]
+        details = "编写的高性能分布式任务流框架在中心内推广到了各个小组，帮助解决复杂的工作流，如k8s、redis集群的运维管理，富容器的管理等等。"
+        [[params.experience.list.items]]
+        details = "负责整个平台的基础设施，包括网关和鉴权等，保证平台的稳定，截止 2020 年，日请求量千万级别。"
+        [[params.experience.list.items]]
+        details = "在公司内推广 ApacheApisix，支持 7 款产品成功落地网关"
+
+        [[params.experience.list]]
+        title = "Software Developer"
+        dates = "2018 - 2019"
+        company = "万汇互联"
+        details = "负责社交产品的网关开发与微服务架构设计开发"
+        [[params.experience.list.items]]
+        details = "引入 Kong 作为网关，解放了微服务在AOP层的工作"
+        [[params.experience.list.items]]
+        details = "使用DSL构建了一个事件系统，优雅地解决了基于用户行为的虚拟币分发功能"
+
+        [[params.experience.list]]
+        title = "Software Developer"
+        dates = "2016 - 2018"
+        company = "深圳巨鼎医疗设备有限公司"
+        details = "负责医院报告打印系统的基础框架设计和开发、带领 web 团队完成业务需求"
+        [[params.experience.list.items]]
+        details = "在两年内通过不断沉淀、优化基础框架与组件，帮助公司核心产品愈发稳定，最后成功孵化，只留下定制化工程师，核心团队解散"
+        [[params.experience.list.items]]
+        details = "第一次带团队，带领 3 人左右的小团队按时按质完成 web 需求，并且完全从了传统 jQuery -> MVC 的 web 转型"
+
+        [[params.experience.list]]
+        title = "Assistant Software Developer"
+        dates = "2014 - 2016"
+        company = "AbeamSystem"
+        details = "负责ERP系统的二次开发与文档编写"
+        [[params.experience.list.items]]
+        details = "接触到了很多项目，所以语言栈丰富，包括: c#/VB/c++/js 等"
+        [[params.experience.list.items]]
+        details = "由于日企的代码都需要反复review，培养了自己对代码质量要求高的习惯"
+        [[params.experience.list.items]]
+        details = "在日本的一年里，不断提升日语技能，能够正常以日语和同事进行工作交流"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "语言栈"
+        [[params.skills.list.items]]
+        details = "Go/DotNet/Javescript"
+        [[params.skills.list.items]]
+        details = "Lua/C++/Python"
+        [[params.skills.list.items]]
+        details = "HTLM/Css"
+
+        [[params.skills.list]]
+        title = "存储"
+        [[params.skills.list.items]]
+        details = "Mysql/SqlServer/Oracle"
+        [[params.skills.list.items]]
+        details = "Mongo/Etcd/Redis"
+        [[params.skills.list.items]]
+        details = "RabbitMQ/Kafak/Es"
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "电子信息工程"
+        university = "大连大学"
+        dates = "2010 - 2014"
+
+    [params.awards]
+        enable = true
+
+        [[params.awards.list]]
+        name = "系统架构设计师"
+        body = "软考高级职称——系统架构设计师"
+        date = "2019"
+        [[params.awards.list]]
+        name = "PMP"
+        body = "项目管理专业人士资格认证"
+        date = "2019"
+        [[params.awards.list]]
+        name = "ApachePMC"
+        body = "ApacheApisixPMC"
+        date = "2020"
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "中文"
+        level = "Native"
+        [[params.languages.list]]
+        name = "英文"
+        level = "Good RW/Poor LS"
+        [[params.languages.list]]
+        name = "日语"
+        level = "Good"
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "ApacheApisix"
+        meta = "PMC"
+        tagline = "Apache下毕业最快的顶级项目之一，是一个基于 Openresty 的网关项目，在腾讯服务于数个百万DAU的产品。作为其PMC，为其贡献过诸如CORS, BatchRequest等特性，同时也会参与项目的设计评审与CR。"
+
+        [[params.projects.list]]
+        title = "Kubernetes"
+        meta = "Developer"
+        tagline = "内部云平台的调度层，是我们为用户提供基础服务的根本，我一般会编写一些 controller、webhook 以及 operator 来为平台用户提供特性功能。"
+
+        [[params.projects.list]]
+        title = "Prometheus"
+        meta = "Developer"
+        tagline = "CNCF 的毕业项目，云原生下的观测性大多都是基于本项目实现，我用于为整个平台提供指标监控和采集方案，采集每秒千万级别的性能指标和业务指标。"
+
+        [[params.projects.list]]
+        title = "go-restful"
+        meta = "Contributor"
+        tagline = "k8s 用于内部组件通信的 http 框架，没有任何外部依赖，同时性能也较高，该框架也是 go-chassis 的路由框架，我为其贡献了GoogleAPI 设计规范的 CustomMethod."
+
+        [[params.projects.list]]
+        title = "go-chassis"
+        meta = "Contributor"
+        tagline = "华为开源的微服务框架，我用于内部微服务开发，迭代过程帮助项目提升了性能与稳定性，因此受邀作为讲师参加了华为赞助的Gopher线下沙龙。"
+
+        [[params.projects.list]]
+        title = "hydra"
+        meta = "Contributor"
+        tagline = "一个实现了oauth2的开源项目，我用其实现了平台的Oauth2授权，在使用过程中为项目贡献了一些fixs。"
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/ShiningRush"
+        title = "ShiningRush"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/%E9%91%AB-%E5%BE%90-929452140/"
+        title = "XuXin"
