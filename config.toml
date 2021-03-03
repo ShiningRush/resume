@@ -38,7 +38,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "我工作于腾讯IEG，和小组的其他同事负责一个面向公司内部的云平台。我的主要工作是主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询，帮助公司的产品从传统架构转型到云原生。工作之余我也热爱开源贡献，为众多开源项目都曾贡献过自己的代码。"
+        text = "我工作于腾讯IEG，和小组的其他同事负责一个面向公司内部的云平台。我的主要工作是主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询与集群资源管理，帮助公司的产品从传统架构转型到云原生，具备丰富的云原生架构经验。工作之余我也热爱开源贡献，为众多开源项目都曾贡献过自己的代码。"
 
     [params.experience]
         enable = true
@@ -47,13 +47,15 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Senior Software Engineer"
         dates = "2019 - Present"
         company = "Tencent"
-        details = "负责内部云平台的微服务设计和开发，平台使用k8s提供调度能力，GO编写管控服务，截止2020年底，平台服务于公司数十种产品，部署POD数十万。"
+        details = "主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询与集群资源管理，平台使用k8s提供调度能力，GO编写管控服务，截止2020年底，平台服务于公司数十种产品，部署POD数十万。"
         [[params.experience.list.items]]
         details = "为平台搭建一套完整的分布式指标采集组件，负责采集整个平台百万级别 POD 的性能指标与业务指标，截止 2020 年底，每秒写入指标超过千万级别。"
         [[params.experience.list.items]]
         details = "技术支持 10+ 项目从传统架构转型到云原生，其中包含日访问量亿级的项目"
         [[params.experience.list.items]]
         details = "编写的高性能分布式任务流框架在中心内推广到了各个小组，帮助解决复杂的工作流，如k8s、redis集群的运维管理，富容器的管理等等。"
+        [[params.experience.list.items]]
+        details = "基于自研的工作流框架实现了 k8s 集群节点的自动伸缩与快上快下，只需指定期望数量，其他一切自动完成。"
         [[params.experience.list.items]]
         details = "负责整个平台的基础设施，包括网关和鉴权等，保证平台的稳定，截止 2020 年，日请求量千万级别。"
         [[params.experience.list.items]]
