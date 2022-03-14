@@ -17,11 +17,11 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
         name = "徐鑫"
         tagline = "Senior Software Engineer"
-        avatar = "/photo.jpeg"
+        avatar = "/icon.jpg"
 
     [params.contact]
         enable = true
-        location = "深圳"
+        location = "广州"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
@@ -38,20 +38,32 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "我工作于腾讯IEG，和小组的其他同事负责一个面向公司内部的云平台。我的主要工作是主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询与集群资源管理，帮助公司的产品从传统架构转型到云原生，具备丰富的云原生架构经验。工作之余我也热爱开源贡献，为众多开源项目都曾贡献过自己的代码。"
+        text = "我目前就职于字节中台架构团队，负责ToB方向的技术探索以及构建解决方案，同时也担任多租户平台相关的开发工作，为公司其他中台提供通用能力以及BP服务。此前在腾讯游戏的容器团队，维护内部的容器云平台，主要职责为主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询，帮助公司的产品从传统架构转型到云原生，具备丰富的云原生架构经验。工作之余也热衷为开源项目添砖加瓦，为众多开源项目都曾贡献过代码。"
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
         title = "Senior Software Engineer"
-        dates = "2019 - Present"
+        dates = "2021 - Present"
+        company = "ByteDance"
+        details = "主要负责ToB方向的技术探索以及构建解决方案，同时也担任多租户平台相关的开发工作，为公司其他中台提供通用能力以及BP服务"
+        [[params.experience.list.items]]
+        details = "为GMP团队搭建构建完整的私有化部署方案，克服其内部联调慢、交付质量低的痛点。"
+        [[params.experience.list.items]]
+        details = "快速融入多租户治理平台的研发工作，在平台的稳定性上开展了异构容灾、版本化告警注入等功能，也承接了部分CodeReview的工作"
+        [[params.experience.list.items]]
+        details = "在组内分享业界更多一些的技术实践，更优雅地解决组内问题，如领域驱动设计、golang单测实践等"
+
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = "2019 - 2021"
         company = "Tencent"
         details = "主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询与集群资源管理，平台使用k8s提供调度能力，GO编写管控服务，截止2020年底，平台服务于公司数十种产品，部署POD数十万。"
         [[params.experience.list.items]]
         details = "为平台搭建一套完整的分布式指标采集组件，负责采集整个平台百万级别 POD 的性能指标与业务指标，截止 2020 年底，每秒写入指标超过千万级别。"
         [[params.experience.list.items]]
-        details = "技术支持 10+ 项目从传统架构转型到云原生，其中包含日访问量亿级的项目"
+        details = "技术支持 10+ 项目从传统架构转型到云原生，其中包含日访问量亿级的项目"
         [[params.experience.list.items]]
         details = "编写的高性能分布式任务流框架在中心内推广到了各个小组，帮助解决复杂的工作流，如k8s、redis集群的运维管理，富容器的管理等等。"
         [[params.experience.list.items]]
@@ -77,9 +89,9 @@ googleAnalytics = "UA-XXXXXXX-Y"
         company = "深圳巨鼎医疗设备有限公司"
         details = "负责医院报告打印系统的基础框架设计和开发、带领 web 团队完成业务需求"
         [[params.experience.list.items]]
-        details = "在两年内通过不断沉淀、优化基础框架与组件，帮助公司核心产品愈发稳定，最后成功孵化，只留下定制化工程师，核心团队解散"
+        details = "在两年内通过不断沉淀、优化基础框架与组件，帮助公司核心产品愈发稳定，最后成功孵化，只留下定制化工程师，核心团队解散"
         [[params.experience.list.items]]
-        details = "第一次带团队，带领 3 人左右的小团队按时按质完成 web 需求，并且完全从了传统 jQuery -> MVC 的 web 转型"
+        details = "第一次带团队，带领 3 人左右的小团队按时按质完成 web 需求，并且完成了从传统 jQuery -> MVC 的 web 转型"
 
         [[params.experience.list]]
         title = "Assistant Software Developer"
@@ -125,6 +137,10 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.awards.list]]
+        name = "ApachePMC"
+        body = "ApacheApisixPMC"
+        date = "2020"
+        [[params.awards.list]]
         name = "系统架构设计师"
         body = "软考高级职称——系统架构设计师"
         date = "2019"
@@ -132,10 +148,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
         name = "PMP"
         body = "项目管理专业人士资格认证"
         date = "2019"
-        [[params.awards.list]]
-        name = "ApachePMC"
-        body = "ApacheApisixPMC"
-        date = "2020"
 
     [params.languages]
         enable = true

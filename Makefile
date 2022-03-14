@@ -1,6 +1,10 @@
 SRV_NAME=resume
 HUB_URL=shiningrush
 
+.PHONY: init
+init:
+	git submodule update --init --recursive
+
 .PHONY: build
 build:
 	hugo
