@@ -47,7 +47,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Software Architect"
         dates = "2021 - Present"
         company = "ByteDance"
-        details = "负责研发团队的基础架构方向，小组的核心职责为保障线上可靠性、同时为业务线提供 "WriteOnce, RunAnywhere" 的技术底座，为业务的可迁移（私有化部署）、存算资源管理以及流量治理提供统一的基础设施"
+        details = "负责研发团队的基础架构方向，小组的核心职责为保障线上可靠性、同时为业务线提供 'WriteOnce, RunAnywhere' 的技术底座，为业务的可迁移（私有化部署）、存算资源管理以及流量治理提供统一的基础设施"
         [[params.experience.list.items]]
         details = "从 0 到 1 构建资源中心解决方案，用于解耦业务对算力与存储资源的依赖，实现混合多云的资源调度能力，同时也提升了产品的可迁移行"
         [[params.experience.list.items]]
