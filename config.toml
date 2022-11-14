@@ -44,16 +44,18 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.experience.list]]
-        title = "Senior Software Engineer"
+        title = "Software Architect"
         dates = "2021 - Present"
         company = "ByteDance"
-        details = "主要负责ToB方向的技术探索以及构建解决方案，同时也担任多租户平台相关的开发工作，为公司其他中台提供通用能力以及BP服务"
+        details = "负责研发团队的基础架构方向，小组的核心职责为保障线上可靠性、同时为业务线提供 "WriteOnce, RunAnywhere" 的技术底座，为业务的可迁移（私有化部署）、存算资源管理以及流量治理提供统一的基础设施"
         [[params.experience.list.items]]
-        details = "为GMP团队搭建构建完整的私有化部署方案，克服其内部联调慢、交付质量低的痛点。"
+        details = "从 0 到 1 构建资源中心解决方案，用于解耦业务对算力与存储资源的依赖，实现混合多云的资源调度能力，同时也提升了产品的可迁移行"
         [[params.experience.list.items]]
-        details = "快速融入多租户治理平台的研发工作，在平台的稳定性上开展了异构容灾、版本化告警注入等功能，也承接了部分CodeReview的工作"
+        details = "不断优化Saas架构，如基础上传下载链路的优化（对比优化前有数量级的提升）、构建基于中心式网关的流量治理机制（用于解决流量调度、支持监控大盘、Serverless能力等）等等"
         [[params.experience.list.items]]
-        details = "在组内分享业界更多一些的技术实践，更优雅地解决组内问题，如领域驱动设计、golang单测实践等"
+        details = "为核心产品落地体系化的SRE实践，如确立产品SLI、SLO与SLA，构建通用与业务监控大盘，产出 Runbook 以概述完备的线上应急处理闭环"
+        [[params.experience.list.items]]
+        details = "帮助自身业务私有化的同时，产出的ByteShim套件能够帮助公司内其他产品在不修改代码、不依赖字节基础设施的情况低成本部署到原生 k8s 集群"
 
         [[params.experience.list]]
         title = "Senior Software Engineer"
