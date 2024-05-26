@@ -16,7 +16,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
     [params.profile]
         enable = true
         name = "徐鑫"
-        tagline = "Infrastruct Tech Leader"
+        tagline = "AI Infra Tech Leader"
         avatar = "/icon.jpg"
 
     [params.contact]
