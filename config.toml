@@ -16,7 +16,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
     [params.profile]
         enable = true
         name = "徐鑫"
-        tagline = "Senior Software Engineer"
+        tagline = "Infrastruct Tech Leader"
         avatar = "/icon.jpg"
 
     [params.contact]
@@ -38,24 +38,26 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "我目前就职于字节中台架构团队，负责ToB方向的技术探索以及构建解决方案，同时也担任多租户平台相关的开发工作，为公司其他中台提供通用能力以及BP服务。此前在腾讯游戏的容器团队，维护内部的容器云平台，主要职责为主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询，帮助公司的产品从传统架构转型到云原生，具备丰富的云原生架构经验。工作之余也热衷为开源项目添砖加瓦，为众多开源项目都曾贡献过代码。"
+        text = "我目前就职于字节智能创作-AI平台部门，该部门提供了抖音剪映(C端)以及火山引擎(B端)的绝大多数AI能力。而我则负责其中基础架构方向的研发团队，涉及的主要技术包括网关、模型存储、工程框架、SRE、研发规范以及推理交付平台等，上接AI工程团队，下接字节基础设施，为团队打造高质高效的AI交付链路。此前在腾讯游戏负责容器平台的研发，为上层业务提供推理与训练平台，推动大量游戏业务向云原生转型，积累了丰富的云原生经验。工作之余也热爱参与开源，为ApacheAPISIX 的 PMC Member，也贡献/参与过不少开源项目，详情请移步Github个人页。"
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
-        title = "Software Architect"
+        title = "AI Infra Tech Leader"
         dates = "2021 - Present"
         company = "ByteDance"
-        details = "负责研发团队的基础架构方向，小组的核心职责为保障线上可靠性、同时为业务线提供 'WriteOnce, RunAnywhere' 的技术底座，为业务的可迁移（私有化部署）、存算资源管理以及流量治理提供统一的基础设施"
+        details = "带领AIP的基础架构团队，从B端业务切入，积累了可靠的基础技术解决方案，并以此为基础，将野蛮生长的C端平台技术进行了技术革新，在工程交付、服务运维、技术基建等几大方向上，一边偿还技术债务一边从 0 到 1 去构建体系化的解决方案，在各个方向上都取得了超乎预期的成果"
         [[params.experience.list.items]]
-        details = "从 0 到 1 构建资源中心解决方案，用于解耦业务对算力与存储资源的依赖，实现混合多云的资源调度能力，同时也提升了产品的可迁移行"
+        details = "搭建交付中心、自动工程化、网关控制面、Mesh WASM并结合开源的ComfyUI方案，将交付效率从 > 5d  提升到零工程交付的程度，无需投入工程化人力，业务自行在平台自助进行交付，截止2024年为止平台交付的AI能力过千"
         [[params.experience.list.items]]
-        details = "不断优化Saas架构，如基础上传下载链路的优化（对比优化前有数量级的提升）、构建基于中心式网关的流量治理机制（用于解决流量调度、支持监控大盘、Serverless能力等）等等"
+        details = "通过镜像瘦身、分层，ModelMultiplexing，模型分级缓存，依赖分发加速，自动扩缩容，智能运维等手段把整体推理GPU的日均利用率从20%提升到了50%，部分方向AI能力在80%以上"
         [[params.experience.list.items]]
-        details = "为核心产品落地体系化的SRE实践，如确立产品SLI、SLO与SLA，构建通用与业务监控大盘，产出 Runbook 以概述完备的线上应急处理闭环"
+        details = "从 0 到 1 构建资源中心解决方案，用于解耦业务对算力与存储资源的依赖，实现混合多云的资源调度能力。在计算资源上支持了音视频转码、编辑、模板创作等核心能力的多云调度与动态切流，达到分钟级别的异构容灾。在存储资源上支持了基于磁盘的分级缓存、数据加密、秒传、并行传输等核心能力，作为所有线上服务的底层对象存储，日峰值QPS10w+，峰值带宽100GB/s以上"
         [[params.experience.list.items]]
-        details = "帮助自身业务私有化的同时，产出的ByteShim套件能够帮助公司内其他产品在不修改代码、不依赖字节基础设施的情况低成本部署到原生 k8s 集群"
+        details = "孵化出包括网关、IAM、多云混合资源调度、私有化架构、推理框架与研发基础库等基础能力，覆盖日常研发50%以上的需求场景，极大提升研发效能，规范日常研发质量，支撑BC端70%以上的平台需求与AI工程场景"
+        [[params.experience.list.items]]
+        details = "组建完善的SRE体系，涉及商品化、稳定性与资源管理。商品化方向上，建立了完整的定价模式与自动估价体系，让之前混乱的账单回归正常，并在2024年配合业务完成亿级别的成本梳理；稳定性上沉淀了BC端共用的治理规范（可观测性、容灾、应急预案等方向），并以此推动BC端各个方向完成了大量从一个9到四个9的转变；资源管理上通过拉起各类技术优化专项，完成GPU资源利用率从20%->50%的优化。"
 
         [[params.experience.list]]
         title = "Senior Software Engineer"
