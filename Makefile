@@ -8,8 +8,7 @@ init:
 .PHONY: build
 build:
 	hugo
-	docker build . -t $(HUB_URL)/$(SRV_NAME)
 
 .PHONY: publish
 publish: build
-	docker push $(HUB_URL)/$(SRV_NAME)
+	docker buildx build --platform linux/amd64,linux/arm64 -t $(HUB_URL)/$(SRV_NAME) --push .
