@@ -1,0 +1,244 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "vincixu"
+theme = "devresume"
+googleAnalytics = ""
+
+[params]
+    author = "Xin Xu"
+    description = "DevResume"
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Xin Xu"
+        tagline = "AI Infra Lead | Large-scale Inference Platform · AIGC · SRE · Global Delivery"
+        avatar = "/icon.jpg"
+
+    [params.contact]
+        enable = true
+        location = "Guangzhou, China"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:+8613603043209"
+        text = "+86 136-0304-3209"
+
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:277040271@qq.com"
+        text = "277040271@qq.com"
+
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "http://www.dreamrounder.com"
+        text = "www.dreamrounder.com"
+
+        [[params.contact.list]]
+        icon = "fab fa-github"
+        url = "https://github.com/ShiningRush"
+        text = "github.com/ShiningRush"
+
+        [[params.contact.list]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/%E9%91%AB-%E5%BE%90-929452140/"
+        text = "LinkedIn: Xin Xu"
+
+    [params.summary]
+        enable = true
+        text = """
+Currently AI Platform Infrastructure Lead at ByteDance Intelligent Creation. Built an AI middle platform as the foundation to meet global infrastructure needs across the lifecycle of vision foundation model delivery—covering model training, resource management, capability development & debugging, deployment, multi-region synchronization, traffic scheduling, resource delivery, and reliability—providing unified engineering and scaling capabilities for both internal and external scenarios.
+- Platform & Delivery (AI Middle Platform): Internally, “ByteArtist” supports capability delivery for Douyin, TikTok, CapCut, and Doubao; externally, “Lumi” is offered as a ToB service on Volcano Engine. The platform covers training/debugging/engineering/deployment/operations/experience, delivering 100+ AI capabilities monthly (including the Seed series). Core teams can self-serve delivery with zero manual engineering intervention.
+- Infrastructure & Scale: Supports peak 100k+ QPS, >200k GPUs, and global multi-region active-active. Through image slimming/layering, online colocation, model distribution acceleration, intelligent autoscaling, and load balancing, average inference GPU utilization improved from 10% to 40% (with some capabilities >70%).
+- Reliability & Cost: Established unified BC-side governance (observability/disaster recovery/runbooks), improving availability from 1 nine to 3–4 nines. Built pricing and auto-estimation systems; completed RMB 100M+ cost rationalization in 2024, enabling fine-grained resource and budget management.
+
+Previously led the container platform in Tencent Games, driving multi-business cloud-native transition. Open-source: Apache APISIX PMC Member with long-term contributions.
+"""
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "AI Infra Lead"
+        dates = "2021 - Present"
+        company = "ByteDance"
+        details = "Built an AI middle platform as the foundation for global infrastructure needs in vision model delivery, spanning training, resource management, development & debugging, deployment, multi-region sync, traffic scheduling, resource delivery, and reliability. Systematized B-side methodology and fed back to C-side; built and managed a 30+ team from 0→1, achieving breakthroughs in scale, efficiency, and stability."
+
+        [[params.experience.list.items]]
+        details = "AI Middle Platform (ByteArtist internal / Lumi external) — Delivery Platform: Led an end-to-end delivery platform (debugging/engineering/deployment/operations/experience), delivering 100+ capabilities per month. Core businesses achieved self-serve delivery with zero manual engineering; significantly shortened incubation-to-production cycles."
+        [[params.experience.list.items]]
+        details = "AI Middle Platform — AIGC Ecosystem: Built an asset pool around the Comfy ecosystem (workflows/plugins/models), totaling 100k+ assets (in-house/open-source/algorithm/UGC). Supported blockbuster effects for Douyin, CapCut, and Flow, improving creation efficiency and retention."
+        [[params.experience.list.items]]
+        details = "Global Infrastructure: Developed in-house resource/traffic scheduling, model distribution & acceleration, multi-region sync, and active-active architecture; supported peak 100k+ QPS, >200k GPUs, and global regions. Through image slimming/layering, online colocation, smart autoscaling, and load balancing, inference GPU utilization improved from 10%→40% (some >70%)."
+        [[params.experience.list.items]]
+        details = "SRE & Productization: Established unified BC-side governance (observability/DR/incident response), improving availability from 1 nine to 3–4 nines. Built pricing and auto-estimation; completed RMB 100M+ cost rationalization in 2024 to enable precise resource management and budget compliance."
+
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = "2019.5 - 2021.9"
+        company = "Tencent"
+        details = "Led microservice architecture and development for the container platform. The platform was orchestrated by Kubernetes and written in Go for control-plane services; by end of 2020, served dozens of products and managed hundreds of thousands of Pods."
+        [[params.experience.list.items]]
+        details = "Built the container platform from 0→1; acted as technical BP to drive cloud-native transition for 10+ projects, covering core products with 100M+ daily visits."
+        [[params.experience.list.items]]
+        details = "Developed an in-house distributed metrics collection component covering millions of Pods; by end of 2020, sustained >10M writes/sec to support platform and business observability."
+        [[params.experience.list.items]]
+        details = "Promoted a high-performance distributed workflow framework to support complex tasks like k8s/Redis ops and rich-container management."
+        [[params.experience.list.items]]
+        details = "Implemented autoscaling and rapid node turn-up/turn-down via workflows with declarative desired counts for one-click automation."
+        [[params.experience.list.items]]
+        details = "Owned core infra for gateway and auth, ensuring stability and security for tens of millions of daily requests."
+        [[params.experience.list.items]]
+        details = "Advocated Apache APISIX internally and standardized gateway adoption across 7 products."
+
+        [[params.experience.list]]
+        title = "Software Engineer"
+        dates = "2018.5 - 2019.5"
+        company = "Wanhui Internet"
+        details = "Designed and developed the gateway and microservice architecture for a social product."
+        [[params.experience.list.items]]
+        details = "Introduced Kong as the API gateway to decouple cross-cutting concerns (auth, rate limiting, auditing), significantly reducing service refactoring costs."
+        [[params.experience.list.items]]
+        details = "Built an event system via DSL to implement behavior-driven virtual coin distribution with lower business coupling."
+
+        [[params.experience.list]]
+        title = "Software Engineer"
+        dates = "2016.3 - 2018.5"
+        company = "Shenzhen Juding Medical Equipment Co., Ltd."
+        details = "Designed and developed the base framework of the hospital report printing system, leading a web team to deliver features."
+        [[params.experience.list.items]]
+        details = "Continuously built and refined core framework and components over two years, significantly improving stability and maintainability; the product was successfully incubated and the core team transitioned to customized delivery."
+        [[params.experience.list.items]]
+        details = "First-time tech lead (~3 people), led the transition from jQuery to MVC for web tech."
+
+        [[params.experience.list]]
+        title = "Assistant Software Engineer"
+        dates = "2014.9 - 2016.3"
+        company = "AbeamSystem"
+        details = "Responsible for ERP secondary development and documentation, working across multiple stacks (C# / VB / C++ / JS, etc.)."
+        [[params.experience.list.items]]
+        details = "Strict code reviews cultivated high-quality coding practices."
+        [[params.experience.list.items]]
+        details = "Worked in Japan for one year; smooth Japanese communication and collaboration."
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Programming Languages"
+        [[params.skills.list.items]]
+        details = "Go / Python / .NET (C#) / JavaScript / C++ / Lua / HTML"
+
+        [[params.skills.list]]
+        title = "Cloud Native & Platform"
+        [[params.skills.list.items]]
+        details = "Kubernetes / Helm / Operator / CI&CD (incl. Argo/GitOps) / Docker"
+
+        [[params.skills.list]]
+        title = "Observability & Reliability"
+        [[params.skills.list.items]]
+        details = "Prometheus / Grafana / Tracing / Thanos / M3DB"
+
+        [[params.skills.list]]
+        title = "Data & Messaging"
+        [[params.skills.list.items]]
+        details = "MySQL / SQL Server / Oracle / MongoDB / Etcd / Redis / Kafka / RabbitMQ / Elasticsearch"
+
+        [[params.skills.list]]
+        title = "Gateway & Traffic"
+        [[params.skills.list.items]]
+        details = "Apache APISIX / Kong / Nginx (OpenResty) / Service Mesh"
+
+        [[params.skills.list]]
+        title = "AI Infrastructure"
+        [[params.skills.list.items]]
+        details = "Model registry & distribution / Inference concurrency & scheduling / Online colocation / Multi-region sync & traffic scheduling / AIGC workflows"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "B.Eng. in Electronic Information Engineering"
+        university = "Dalian University"
+        dates = "2010 - 2014"
+
+    [params.awards]
+        enable = true
+
+        [[params.awards.list]]
+        name = "Apache APISIX PMC Member"
+        body = "PMC member of a top-tier open-source API gateway project"
+        date = "2020"
+
+        [[params.awards.list]]
+        name = "Senior System Architect (China)"
+        body = "National Advanced Professional Qualification — System Architecture Designer"
+        date = "2019"
+
+        [[params.awards.list]]
+        name = "PMP"
+        body = "Project Management Professional Certification"
+        date = "2019"
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Chinese"
+        level = "Native"
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Proficient reading/writing; basic speaking"
+
+        [[params.languages.list]]
+        name = "Japanese"
+        level = "Proficient reading/writing; proficient speaking/listening"
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "Apache APISIX"
+        meta = "PMC"
+        tagline = "Top-tier open-source API gateway (based on OpenResty). As a PMC member, contributed to roadmap and code reviews; delivered core features such as CORS and BatchRequest; drove standardized adoption across 7+ Tencent products, handling tens of millions of daily requests."
+
+        [[params.projects.list]]
+        title = "Kubernetes"
+        meta = "Developer"
+        tagline = "Core of the internal cloud platform’s scheduling layer; implemented Controllers, Webhooks, and Operators to provide features and automated operations."
+
+        [[params.projects.list]]
+        title = "Prometheus"
+        meta = "Developer"
+        tagline = "Standard observability component in cloud-native; provided monitoring and metrics ingestion, sustaining tens of millions of writes per second for platform and business workloads."
+
+        [[params.projects.list]]
+        title = "go-restful"
+        meta = "Contributor"
+        tagline = "A common HTTP framework used by Kubernetes components; contributed CustomMethod per Google API design to standardize internal routing and maintainability."
+
+        [[params.projects.list]]
+        title = "go-chassis"
+        meta = "Contributor"
+        tagline = "Huawei’s open-source microservice framework; improved performance and stability during internal microservice iterations; invited speaker at Huawei-sponsored Gopher meetup."
+
+        [[params.projects.list]]
+        title = "Hydra"
+        meta = "Contributor"
+        tagline = "Open-source OAuth2 project; implemented platform authorization on top of it and contributed multiple fixes during adoption."
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/ShiningRush"
+        title = "ShiningRush"
+
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/%E9%91%AB-%E5%BE%90-929452140/"
+        title = "Xin Xu"
