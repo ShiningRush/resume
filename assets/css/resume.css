@@ -1,0 +1,173 @@
+/* Keep DevResume's Bootstrap layout and visual styling. */
+.resume-name-en {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.resume-focus {
+    font-size: 0.875rem;
+}
+
+.resume-contact,
+.resume-main .item-content,
+.resume-aside {
+    overflow-wrap: anywhere;
+}
+
+.resume-intro .media-body p:last-child {
+    margin-bottom: 0;
+}
+
+.resume-list {
+    padding-left: 1.25rem;
+}
+
+.resume-achievements .work-achievement + .work-achievement {
+    margin-top: 0.75rem;
+}
+
+.resume-main .achievement-title {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.resume-achievements .achievement-body {
+    padding-left: 0.75rem;
+}
+
+.achievement-body p:last-child {
+    margin-bottom: 0;
+}
+
+.resume-intro strong,
+.resume-main strong {
+    color: #28714e;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+@media screen and (max-width: 575.98px) {
+    .resume-wrapper {
+        padding: 1.5rem !important;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    body,
+    .main-wrapper > .container {
+        min-width: 0 !important;
+    }
+
+    .main-wrapper > .container {
+        width: 100%;
+        max-width: none;
+        padding: 0 !important;
+    }
+
+    .resume-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0;
+        box-shadow: none !important;
+    }
+
+    .resume-header .resume-title {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .resume-header .resume-contact {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .resume-name {
+        font-size: 2rem;
+    }
+
+    .resume-name,
+    .resume-section-heading {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume-intro,
+    .resume-main .item-content,
+    .resume-main .achievement-title {
+        font-size: 10pt;
+    }
+
+    .resume-intro .media {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+    }
+
+    .resume-profile-image {
+        width: 80px;
+        margin: 0 20px 0 0 !important;
+    }
+
+    .resume-main .item-title,
+    .resume-main .item-meta {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0;
+    }
+
+    .resume-main .item-meta {
+        text-align: right !important;
+    }
+
+    .resume-body > .row,
+    .resume-main .item-heading {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .resume-main,
+    .resume-aside {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .resume-aside {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        gap: 1rem;
+        border-left: 0;
+    }
+
+    .resume-main .item-heading,
+    .resume-section-heading,
+    .achievement-title {
+        break-after: avoid;
+    }
+
+    .resume-list li,
+    .project-section .item,
+    .resume-aside section {
+        break-inside: avoid;
+    }
+
+    .resume-social-list,
+    .resume-footer,
+    .resume-wrapper > hr:last-of-type,
+    .footer {
+        display: none !important;
+    }
+
+    a[href]::after {
+        content: none;
+    }
+}

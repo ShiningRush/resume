@@ -1,0 +1,8 @@
+<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+    <h2 class="resume-name mb-0 text-uppercase">
+        {{ .Site.Params.profile.name }}
+        {{ with .Site.Params.profile.englishName }}<small class="resume-name-en">{{ . }}</small>{{ end }}
+    </h2>
+    {{ with .Site.Params.profile.role }}<div class="resume-tagline mb-1">{{ . }}</div>{{ end }}
+    <div class="resume-focus text-muted mb-3 mb-md-0">{{ .Site.Params.profile.tagline }}</div>
+</div>

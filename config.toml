@@ -1,25 +1,28 @@
 baseURL = "/"
 languageCode = "zh-cn"
-title = "vincixu"
+defaultContentLanguage = "zh-cn"
+title = "徐鑫｜AI 平台与基础设施负责人"
 theme = "devresume"
 googleAnalytics = ""
 
 [params]
     author = "徐鑫"
-    description = "DevResume"
+    description = "徐鑫的个人简历：AI 平台与基础设施负责人，专注大规模推理平台、全球化交付与 AIGC 商业化。"
 
     primaryColor = "#54B689"
     textPrimaryColor = "#292929"
 
     [params.profile]
         enable = true
-        name = "徐鑫 (Xin Xu)"
-        tagline = "AI Infra 技术负责人｜大规模推理平台·AIGC·SRE·全球化交付"
+        name = "徐鑫"
+        englishName = "Xin Xu"
+        role = "AI 平台与基础设施负责人"
+        tagline = "大规模推理平台｜全球化交付｜AIGC 商业化"
         avatar = "/icon.jpg"
 
     [params.contact]
         enable = true
-        location = "广州（Guangzhou, China）"
+        location = "广州，中国"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
@@ -49,92 +52,106 @@ googleAnalytics = ""
     [params.summary]
         enable = true
         text = """
-现任字节跳动智能创作—AI平台部门基础架构负责人，以 AI 中台为基座，承接视觉大模型交付过程中的全球化基建需求，覆盖模型训练、资源管理、能力开发与调试、能力部署、多地域同步、流量调度、资源交付与稳定性等全链路；面向内部与外部分别提供统一的工程化与规模化能力。
-- 平台化与交付（AI 中台）：内部以 ByteArtist 支撑抖音、TikTok、剪映与豆包等业务的能力交付；在火山引擎以 Lumi 对外提供 ToB 服务。平台覆盖训练/调试/工程化/部署/运维/体验，月均交付 100+ AI 能力（含 Seed 系列），核心业务可自助交付，工程化零人工介入。
-- 基础设施与规模：支撑峰值 10w+ QPS、>20w GPU、全球多地域部署与多活；通过镜像瘦身与分层、在线混部、模型分发加速、智能扩缩、负载均衡等手段，将推理 GPU 日均 SMA 由 10% 提升至 40%（部分能力 >70%）。
-- 稳定性与成本：沉淀 BC 端统一治理规范（可观测性/容灾/应急预案），稳定性从 1 个 9 提升至 3~4 个 9；建立商品化定价与自动估价体系，2024 年完成亿级成本梳理，支撑精细化资源与预算管理。
+字节跳动 AI 平台与基础设施负责人，0→1 组建并管理 **30+ 人团队**，负责视觉大模型平台与全球基础设施建设。支撑抖音、TikTok、剪映、豆包等业务的能力交付，推动核心业务自助交付与 AIGC 平台商业化。
 
-曾在腾讯游戏负责容器平台，推动多业务云原生转型。开源方面为 Apache APISIX PMC Member，长期参与多个开源项目。
+平台稳定承载峰值 **16 万+ QPS**，管理 **26 万+ GPU**，持续提升资源效率、核心服务可用性与成本竞争力。曾主导腾讯游戏容器平台建设，现为 **Apache APISIX PMC 成员**。
 """
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
-        title = "AI Infra 技术负责人"
-        dates = "2021 - 至今"
+        title = "AI 平台与基础设施负责人"
+        dates = "2021—至今"
         company = "字节跳动 ByteDance"
-        details = "以 AI 中台为基座承接视觉大模型交付的全球化基建需求，贯通训练、资源管理、开发调试、部署、多地域同步、流量调度、资源交付与稳定性；从 B 端沉淀方法论反哺 C 端，0→1 组建并管理 30+ 人团队，在规模化、效率与稳定性上多维突破。"
+        details = "担任智能创作 AI 平台基建部门负责人，0→1 组建并管理 **30+ 人团队**，培养 **4 位技术方向负责人**。负责视觉模型后训练、工程化交付、全球基础设施与资源运营体系，支撑内部业务规模化交付及外部平台商业化。"
 
         [[params.experience.list.items]]
-        details = "AI 中台（内部 ByteArtist / 外部 Lumi）- 交付平台：主导构建端到端交付平台（调试/工程化/部署/运维/体验），月均交付 100+ 能力；核心业务实现自助交付，工程化零人工介入，能力从孵化到上线周期显著缩短。"
+        title = "平台交付"
+        details = "主导建设 ByteArtist，将工程与算法逐项陪跑的交付模式升级为业务自助。基于工作流依赖与运行环境的导出、恢复，打通后训练、调试、自动工程化、压测与部署，实现 **10 分钟完成工程化及部署，1 小时内完成自动化测试**，月均交付 **100+ AI 能力**，覆盖图片、视频及 VLM 模型，支撑抖音、TikTok、剪映、豆包及 Seed 系列能力交付。"
         [[params.experience.list.items]]
-        details = "AI 中台 - AIGC 生态：基于 Comfy 生态构建资产池（Workflow/插件/模型），资产总量 10 万+（自研/开源/算法/UGC），支撑抖音、剪映、Flow 等业务爆款特效上线，提升创作效率与留存。"
+        title = "全球基础设施"
+        details = "自研资源与流量调度、模型分发加速、多地域同步及多活架构，支撑业务从图片模型扩展至视频及 VLM 模型，峰值 QPS 从 **1 万增长至 16 万+**，GPU 规模从 **6,000 张增长至 26 万+ 张**。"
         [[params.experience.list.items]]
-        details = "全球化基础设施：自研资源/流量调度、模型分发与加速、多地域同步与多活架构，支撑峰值 10w+ QPS、>20w GPU、全球多地域部署；通过镜像瘦身与分层、在线混部、智能扩缩、负载均衡，将推理 GPU 利用率由 10%→40%（部分能力 >70%）。"
+        title = "运营体系"
+        details = """
+从 0→1 建立部门资源与成本运营体系，涵盖 SOP、运营数仓与经营平台，打通资源预算收集、提报、日历预占与交付流程，实现视觉能力流量与资源分布的度量和观测，保障重点活动零资源阻塞。
+牵头成本优化专项，支撑 2024 年剪映「放大镜」、2025 年抖音「庖丁」与 2026 年 TikTok「利用率治理」专项，2024—2026 年业务平均万次调用成本从 **442 元降至 55 元**，累计节省成本 **超过 4 亿元**。
+"""
         [[params.experience.list.items]]
-        details = "SRE 与商品化：沉淀 BC 端统一治理规范（可观测性/容灾/应急），稳定性从 1 个 9 提升至 3~4 个 9；建立定价与自动估价体系，2024 年完成亿级成本梳理，支撑精细化资源管理与预算合规。"
+        title = "GPU 资源效率"
+        details = "建立服务画像、上线准入、存量分层治理及定期复盘机制，按流量、启动时延和 GPU 计算空泡制定优化策略。结合镜像瘦身与分层、模型分发加速、在线混部、智能扩缩容及负载均衡，将推理 GPU 日均 SMA 从 **10%+ 提升至 40%+**，部分能力 **超过 70%**。"
+        [[params.experience.list.items]]
+        title = "稳定性治理"
+        details = "基于统一交付底座建立技术标准、SLA 治理及可观测体系，将核心服务可用性从 **96%+ 提升至 99.97%+**。牵头多机房容灾改造，支撑国内外容灾演练；以 **零事故**保障 2026 年豆包春晚视觉业务流量。"
+        [[params.experience.list.items]]
+        title = "AIGC 生态与商业化"
+        details = "自研兼容 ComfyUI 的编排引擎，建设 Lumi、Lumina 共用的技术底座，支撑两平台商业化交付；两平台 2026 年全球营收合计 **近 1 亿元**。沉淀 **10 万+ 工作流、插件与模型资产**，支撑创作与特效交付。Lumi 于 2025 年上线，面向国内企业提供后训练、编排调试与部署；Lumina 面向海外内容创作，支持画布式创作与创作 Agent，同时通过 AI 开放平台以 OpenAPI 对外提供视觉能力。"
 
         [[params.experience.list]]
         title = "高级软件工程师"
-        dates = "2019.5 - 2021.9"
+        dates = "2019.05—2021.09"
         company = "腾讯 Tencent"
-        details = "主导容器平台的微服务架构设计与研发，平台基于 Kubernetes 调度，Go 语言编写管控服务；至 2020 年底服务数十款产品，部署 POD 数十万。"
+        details = "主导腾讯游戏容器平台的架构设计与研发，基于 Kubernetes 构建调度层，以 Go 实现管控服务。截至 2020 年底，平台服务数十款产品，部署数十万 Pod。"
         [[params.experience.list.items]]
-        details = "0→1 落地容器平台，技术 BP 10+ 项目完成云原生转型，覆盖日访问量亿级的核心产品。"
+        title = "平台建设"
+        details = "从零搭建容器平台，作为技术对接负责人推动 **10+ 项目云原生转型**，覆盖日访问量亿级的核心产品。"
         [[params.experience.list.items]]
-        details = "自研分布式指标采集组件，覆盖百万级 POD；至 2020 年底写入速率超千万条/秒，支撑平台与业务观测。"
+        title = "可观测性"
+        details = "自研分布式指标采集组件，覆盖百万级 Pod，支撑平台与业务监控；截至 2020 年底，指标写入 **超过 1,000 万条/秒**。"
         [[params.experience.list.items]]
-        details = "推广高性能分布式任务流框架，支撑 k8s/Redis 运维、富容器管理等复杂工作流。"
+        title = "自动化运维"
+        details = "推广高性能分布式工作流框架，支撑 Kubernetes、Redis 运维及富容器管理；基于声明式期望数实现集群节点自动伸缩与快速上下线。"
         [[params.experience.list.items]]
-        details = "基于工作流框架实现集群节点自动伸缩与快上快下，声明式期望数，一键自动化闭环。"
-        [[params.experience.list.items]]
-        details = "负责网关与鉴权等核心基建，保障千万级日请求的稳定与安全。"
-        [[params.experience.list.items]]
-        details = "在公司内推广 Apache APISIX，支持 7 款产品成功落地网关标准化。"
+        title = "APISIX网关"
+        details = "负责平台网关及鉴权体系，保障日千万级请求的稳定与安全，推动网关标准化及 Apache APISIX 在 **7 款产品**中落地。"
 
         [[params.experience.list]]
         title = "软件工程师"
-        dates = "2018.5 - 2019.5"
+        dates = "2018.05—2019.05"
         company = "万汇互联"
         details = "负责社交产品网关与微服务架构设计与开发。"
         [[params.experience.list.items]]
-        details = "引入 Kong 作为网关，解耦微服务横切关注点（鉴权、限流、审计等），显著降低服务改造成本。"
+        details = "引入 Kong 统一承载鉴权、限流、审计等功能，降低业务服务的改造成本。"
         [[params.experience.list.items]]
-        details = "以 DSL 构建事件系统，优雅实现基于用户行为的虚拟币分发，降低业务逻辑耦合度。"
+        details = "基于 DSL 构建事件系统，实现由用户行为触发的虚拟币分发，降低业务逻辑耦合度。"
 
         [[params.experience.list]]
         title = "软件工程师"
-        dates = "2016.3 - 2018.5"
+        dates = "2016.03—2018.05"
         company = "深圳巨鼎医疗设备有限公司"
-        details = "负责医院报告打印系统的基础框架设计与开发，带领 Web 团队交付业务需求。"
+        details = "负责医院报告打印系统的基础框架设计与开发，带领 3 人 Web 团队交付业务需求。"
         [[params.experience.list.items]]
-        details = "两年内持续沉淀与优化基础框架与组件，显著提升稳定性与可维护性，最终产品成功孵化，核心团队顺利解散转入定制化交付。"
+        details = "持续完善基础框架与公共组件，提升系统稳定性和可维护性；完成产品孵化后，团队转入定制化交付。"
         [[params.experience.list.items]]
-        details = "首次带队（3人），完成从 jQuery 向 MVC 的 Web 技术转型。"
+        details = "推动 Web 应用从 jQuery 主导的页面开发转向 MVC 架构。"
 
         [[params.experience.list]]
         title = "助理软件工程师"
-        dates = "2014.9 - 2016.3"
+        dates = "2014.09—2016.03"
         company = "AbeamSystem"
-        details = "负责 ERP 系统二次开发与文档编写，涉猎多语言栈（C# / VB / C++ / JS 等）。"
+        details = "负责 ERP 系统二次开发与技术文档编写，使用 C#、VB、C++、JavaScript 等语言完成业务需求。"
         [[params.experience.list.items]]
-        details = "严格的代码评审流程培养了高质量编码习惯。"
-        [[params.experience.list.items]]
-        details = "日本工作一年，日语沟通顺畅，能以日语与同事开展协作。"
+        details = "在日本工作一年，以日语开展日常工作沟通与协作，参与规范的代码评审与交付流程。"
 
     [params.skills]
         enable = true
 
         [[params.skills.list]]
-        title = "语言栈"
+        title = "AI Infra"
         [[params.skills.list.items]]
-        details = "Go / Python / .NET(C#) / JavaScript / C++ / Lua / HTML"
+        details = "模型后训练平台、模型仓库与分发"
+        [[params.skills.list.items]]
+        details = "推理调度、在线混部、多地域同步"
+        [[params.skills.list.items]]
+        details = "ComfyUI 兼容编排、AIGC 工作流"
 
         [[params.skills.list]]
         title = "云原生与平台"
         [[params.skills.list.items]]
-        details = "Kubernetes / Helm / Operator / CI&CD（含 Argo/GitOps）/ Docker"
+        details = "Kubernetes / Helm / Operator / Docker"
+        [[params.skills.list.items]]
+        details = "CI/CD / Argo / GitOps"
 
         [[params.skills.list]]
         title = "可观测与稳定性"
@@ -142,19 +159,23 @@ googleAnalytics = ""
         details = "Prometheus / Grafana / Tracing / Thanos / M3DB"
 
         [[params.skills.list]]
-        title = "数据与消息"
-        [[params.skills.list.items]]
-        details = "MySQL / SQL Server / Oracle / MongoDB / Etcd / Redis / Kafka / RabbitMQ / Elasticsearch"
-
-        [[params.skills.list]]
         title = "网关与流量"
         [[params.skills.list.items]]
-        details = "Apache APISIX / Kong / Nginx(OpenResty) / ServiceMesh"
+        details = "Apache APISIX / Kong / OpenResty"
+        [[params.skills.list.items]]
+        details = "Service Mesh / WebAssembly"
 
         [[params.skills.list]]
-        title = "AI Infra"
+        title = "编程语言"
         [[params.skills.list.items]]
-        details = "模型仓库与分发 / 推理并发与调度 / 在线混部 / 多地域同步与流量调度 / AIGC Workflow"
+        details = "Go / Python / C# / JavaScript / C++ / Lua"
+
+        [[params.skills.list]]
+        title = "数据与消息"
+        [[params.skills.list.items]]
+        details = "MySQL / Redis / Etcd / MongoDB"
+        [[params.skills.list.items]]
+        details = "Kafka / RabbitMQ / Elasticsearch"
 
     [params.education]
         enable = true
@@ -162,19 +183,19 @@ googleAnalytics = ""
         [[params.education.list]]
         degree = "电子信息工程（工学学士）"
         university = "大连大学"
-        dates = "2010 - 2014"
+        dates = "2010—2014"
 
     [params.awards]
         enable = true
 
         [[params.awards.list]]
         name = "Apache APISIX PMC Member"
-        body = "顶级开源网关项目 PMC 成员"
+        body = "项目管理委员会成员"
         date = "2020"
 
         [[params.awards.list]]
         name = "系统架构设计师"
-        body = "软考高级职称—系统架构设计师"
+        body = "计算机技术与软件专业技术资格（高级）"
         date = "2019"
 
         [[params.awards.list]]
@@ -191,11 +212,11 @@ googleAnalytics = ""
 
         [[params.languages.list]]
         name = "英文"
-        level = "读写 熟练，口语 入门"
+        level = "读写熟练，口语基础"
 
         [[params.languages.list]]
         name = "日语"
-        level = "读写 熟练，听说 熟练"
+        level = "读写及听说熟练，可开展工作沟通"
 
     [params.projects]
         enable = true
@@ -203,32 +224,32 @@ googleAnalytics = ""
         [[params.projects.list]]
         title = "Apache APISIX"
         meta = "PMC"
-        tagline = "顶级开源 API 网关（基于 OpenResty）。作为 PMC，参与路线规划与代码评审，贡献 CORS、BatchRequest 等核心特性，推动在腾讯等 7+ 产品落地，覆盖日千万级请求。"
+        tagline = "作为项目管理委员会成员，参与路线规划与代码评审，贡献 CORS、BatchRequest 等特性，并推动在腾讯多款产品中落地。"
 
         [[params.projects.list]]
         title = "Kubernetes"
         meta = "Developer"
-        tagline = "内部云平台调度层的核心；编写 Controller、Webhook、Operator 等，为平台用户提供特性能力与自动化运维。"
+        tagline = "基于内部版本开展二次开发，编写 Controller、Webhook、Operator，扩展云平台调度与自动化运维能力；相关改造未合入上游版本。"
 
         [[params.projects.list]]
         title = "Prometheus"
         meta = "Developer"
-        tagline = "云原生观测标准组件；为平台提供指标监控与采集方案，支撑每秒千万级别性能与业务指标写入。"
+        tagline = "基于内部版本改造指标监控与采集方案，支撑每秒千万级性能及业务指标写入。"
 
         [[params.projects.list]]
         title = "go-restful"
         meta = "Contributor"
-        tagline = "Kubernetes 组件常用 HTTP 框架；贡献 Google API 设计规范的 CustomMethod，提升内部路由规范化与可维护性。"
+        tagline = "贡献符合 Google API 设计规范的 CustomMethod 支持，完善框架路由能力，并用于内部 API 规范化。"
 
         [[params.projects.list]]
         title = "go-chassis"
         meta = "Contributor"
-        tagline = "华为开源微服务框架；在内部微服务迭代中提升性能与稳定性，并受邀担任华为赞助的 Gopher 线下沙龙讲师。"
+        tagline = "参与华为开源微服务框架，在内部微服务迭代中改进性能与稳定性，并受邀担任华为赞助的 Gopher 线下沙龙讲师。"
 
         [[params.projects.list]]
         title = "Hydra"
         meta = "Contributor"
-        tagline = "实现 OAuth2 的开源项目；基于其完成平台授权能力，并在使用过程中贡献多项修复。"
+        tagline = "基于 Hydra 构建平台 OAuth 2.0 授权能力，并在使用过程中向上游贡献多项修复。"
 
     [params.social]
         enable = true

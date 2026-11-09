@@ -1,0 +1,26 @@
+<section class="work-section py-3">
+    <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "experiences" }}</h3>
+
+    {{ range .Site.Params.experience.list }}
+    <div class="item mb-3">
+        <div class="item-heading row align-items-center mb-2">
+            <h4 class="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">{{ .title }}</h4>
+            <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">{{ .company }} | {{ .dates }}</div>
+        </div>
+        <div class="item-content">
+            {{ with .details }}<p class="work-responsibility">{{ . | markdownify }}</p>{{ end }}
+            {{ with .items }}
+            {{ $firstItem := index . 0 }}
+            <ul class="resume-list{{ if $firstItem.title }} resume-achievements{{ end }}">
+                {{ range . }}
+                <li class="work-achievement">
+                    {{ with .title }}<h5 class="achievement-title">{{ . }}</h5>{{ end }}
+                    {{ with .details }}<div class="achievement-body">{{ . | markdownify }}</div>{{ end }}
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</section>

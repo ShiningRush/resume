@@ -1,2 +1,19 @@
-public/*
-resources/_gen/*
+# Hugo build output and cache
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Local preview, authentication, and print artifacts
+/.screenshots/
+/.lark-document-auth.png
+/resume-print*.pdf
+/resume-print*.png
+/resume-print*.log
+
+# OS and editor temporary files
+.DS_Store
+*.swp
+*.swo
+*~
+*.tmp
+*.log
