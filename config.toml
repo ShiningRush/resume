@@ -1,13 +1,13 @@
 baseURL = "/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "徐鑫｜AI 平台与基础设施负责人"
+title = "徐鑫｜AI 平台负责人"
 theme = "devresume"
 googleAnalytics = ""
 
 [params]
     author = "徐鑫"
-    description = "徐鑫的个人简历：AI 平台与基础设施负责人，专注大规模推理平台、全球化交付与 AIGC 商业化。"
+    description = "徐鑫的个人简历：AI 平台负责人，专注大规模推理平台、全球化交付与 AIGC 商业化。"
 
     primaryColor = "#54B689"
     textPrimaryColor = "#292929"
@@ -16,7 +16,7 @@ googleAnalytics = ""
         enable = true
         name = "徐鑫"
         englishName = "Xin Xu"
-        role = "AI 平台与基础设施负责人"
+        role = "AI 平台负责人"
         tagline = "大规模推理平台｜全球化交付｜AIGC 商业化"
         avatar = "/icon.jpg"
 
@@ -52,7 +52,7 @@ googleAnalytics = ""
     [params.summary]
         enable = true
         text = """
-字节跳动 AI 平台与基础设施负责人，0→1 组建并管理 **30+ 人团队**，负责视觉大模型平台与全球基础设施建设。支撑抖音、TikTok、剪映、豆包等业务的能力交付，推动核心业务自助交付与 AIGC 平台商业化。
+字节跳动 AI 平台负责人，0→1 组建并管理 **30+ 人团队**，负责视觉大模型平台与全球基础设施建设。支撑抖音、TikTok、剪映、豆包等业务的能力交付，推动核心业务自助交付与 AIGC 平台商业化。
 
 平台稳定承载峰值 **16 万+ QPS**，管理 **26 万+ GPU**，持续提升资源效率、核心服务可用性与成本竞争力。曾主导腾讯游戏容器平台建设，现为 **Apache APISIX PMC 成员**。
 """
@@ -61,7 +61,7 @@ googleAnalytics = ""
         enable = true
 
         [[params.experience.list]]
-        title = "AI 平台与基础设施负责人"
+        title = "AI 平台负责人"
         dates = "2021—至今"
         company = "字节跳动 ByteDance"
         details = "担任智能创作 AI 平台基建部门负责人，0→1 组建并管理 **30+ 人团队**，培养 **4 位技术方向负责人**。负责视觉模型后训练、工程化交付、全球基础设施与资源运营体系，支撑内部业务规模化交付及外部平台商业化。"
@@ -140,18 +140,12 @@ googleAnalytics = ""
         [[params.skills.list]]
         title = "AI Infra"
         [[params.skills.list.items]]
-        details = "模型后训练平台、模型仓库与分发"
-        [[params.skills.list.items]]
-        details = "推理调度、在线混部、多地域同步"
-        [[params.skills.list.items]]
-        details = "ComfyUI 兼容编排、AIGC 工作流"
+        details = "模型后训练 / 模型仓库与分发 / 推理调度 / 在线混部 / 多地域多活 / ComfyUI / AIGC Workflow"
 
         [[params.skills.list]]
         title = "云原生与平台"
         [[params.skills.list.items]]
-        details = "Kubernetes / Helm / Operator / Docker"
-        [[params.skills.list.items]]
-        details = "CI/CD / Argo / GitOps"
+        details = "Kubernetes / Helm / Operator / Docker / CI/CD / Argo / GitOps"
 
         [[params.skills.list]]
         title = "可观测与稳定性"
@@ -161,21 +155,17 @@ googleAnalytics = ""
         [[params.skills.list]]
         title = "网关与流量"
         [[params.skills.list.items]]
-        details = "Apache APISIX / Kong / OpenResty"
-        [[params.skills.list.items]]
-        details = "Service Mesh / WebAssembly"
+        details = "Apache APISIX / Kong / Nginx / OpenResty / Service Mesh"
 
         [[params.skills.list]]
-        title = "编程语言"
+        title = "语言栈"
         [[params.skills.list.items]]
-        details = "Go / Python / C# / JavaScript / C++ / Lua"
+        details = "Go / Python / .NET (C#) / JavaScript / C++ / Lua / HTML"
 
         [[params.skills.list]]
         title = "数据与消息"
         [[params.skills.list.items]]
-        details = "MySQL / Redis / Etcd / MongoDB"
-        [[params.skills.list.items]]
-        details = "Kafka / RabbitMQ / Elasticsearch"
+        details = "MySQL / SQL Server / Oracle / MongoDB / etcd / Redis / Kafka / RabbitMQ / Elasticsearch"
 
     [params.education]
         enable = true

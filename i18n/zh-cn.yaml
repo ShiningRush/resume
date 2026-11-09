@@ -11,6 +11,6 @@
 - id: languages
   translation: 语言能力
 - id: projects
-  translation: 开源贡献与内部改造
+  translation: 开源贡献
 - id: skills
-  translation: 核心技能
+  translation: 专业技能
